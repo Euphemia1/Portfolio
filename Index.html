@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello World!, Welcome to My Profile</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gradientStart: '#4facfe',
+            gradientEnd: '#00f2fe',
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="bg-gradient-to-b from-gradientStart to-gradientEnd text-gray-800 font-sans">
+
+  <!-- Main Container -->
+  <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg mt-10 text-center">
+    <!-- Profile Image -->
+    <img src="https://avatars.githubusercontent.com/u/103880289?v=4" alt="Profile Image" 
+      class="w-32 h-32 mx-auto rounded-full border-4 border-gradientStart shadow-lg mb-6">
+
+    <!-- Title -->
+    <h1 class="text-4xl font-bold text-gradientStart">Hello World! 👋</h1>
+    <p class="text-lg mt-4">
+      💻 I am a Software Engineer Specialized in Frontend Development and Technical Writing. With a passion for creating intuitive user interfaces and crafting clear and concise technical documentation, I combine my technical writing skills with my ability to communicate complex concepts effectively.
+    </p>
+
+    <!-- Skills -->
+    <div class="mt-8">
+      <h2 class="text-2xl font-semibold text-gradientStart">My Expertise:</h2>
+      <div class="flex flex-wrap justify-center gap-2 mt-4">
+        <span class="bg-gradientStart text-white px-4 py-1 rounded-full">HTML5</span>
+        <span class="bg-gradientStart text-white px-4 py-1 rounded-full">CSS3</span>
+        <span class="bg-gradientStart text-white px-4 py-1 rounded-full">JavaScript</span>
+        <span class="bg-gradientStart text-white px-4 py-1 rounded-full">React</span>
+        <span class="bg-gradientStart text-white px-4 py-1 rounded-full">Node.js</span>
+        <span class="bg-gradientStart text-white px-4 py-1 rounded-full">Visual Studio Code</span>
+      </div>
+    </div>
+
+    <!-- Social Links -->
+    <div class="mt-8">
+      <h2 class="text-2xl font-semibold text-gradientStart">Find Me On:</h2>
+      <div class="grid grid-cols-3 gap-2 mt-4">
+        <a href="https://linkedin.com" target="_blank" 
+          class="text-gradientStart hover:underline" title="LinkedIn">LinkedIn</a>
+        <a href="https://medium.com" target="_blank" 
+          class="text-gradientStart hover:underline" title="Medium">Medium</a>
+        <a href="mailto:your-email@gmail.com" 
+          class="text-gradientStart hover:underline" title="Gmail">Gmail</a>
+        <a href="https://dev.to" target="_blank" 
+          class="text-gradientStart hover:underline" title="Dev.to">Dev.to</a>
+        <a href="https://instagram.com" target="_blank" 
+          class="text-gradientStart hover:underline" title="Instagram">Instagram</a>
+        <a href="https://twitter.com" target="_blank" 
+          class="text-gradientStart hover:underline" title="Twitter">Twitter</a>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="mt-12">
+      <h2 class="text-2xl font-semibold text-gradientStart">Contact Me</h2>
+      <form class="mt-6 max-w-md mx-auto">
+        <div class="mb-4">
+          <label for="name" class="block text-left text-sm font-medium text-gray-600">Name</label>
+          <input type="text" id="name" placeholder="Your Name" 
+            class="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-gradientStart">
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-left text-sm font-medium text-gray-600">Email</label>
+          <input type="email" id="email" placeholder="Your Email" 
+            class="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-gradientStart">
+        </div>
+        <div class="mb-4">
+          <label for="message" class="block text-left text-sm font-medium text-gray-600">Message</label>
+          <textarea id="message" rows="4" placeholder="Your Message" 
+            class="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-gradientStart"></textarea>
+        </div>
+        <button type="submit" 
+          class="w-full bg-gradientStart text-white py-2 px-4 rounded-lg hover:bg-gradientEnd transition">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
